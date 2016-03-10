@@ -1,5 +1,6 @@
 package com.example.test;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,29 +10,10 @@ import com.efan.okhttputils.annotate.BindView;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
     @Override
-    public void initView() {
-
-    }
-
-    @Override
-    public void initData() {
-
-    }
-
-    @Override
-    public void initEvent() {
-
-    }
-
-    @Override
-    public void setRootView() {
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 }
